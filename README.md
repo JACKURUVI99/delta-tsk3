@@ -417,21 +417,3 @@ docker-compose logs -f
 # View server logs
 tail -f server.log
 ```
-
-## Contributing
-
-This is a educational project for beginners. Feel free to:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-## License
-
-This project is for educational purposes. Feel free to use and modify as needed.
-
-## Learning Resources
-
-- [Lua Programming Guide](https://www.lua.org/pil/)
-- [Socket Programming in Lua](https://w3.impa.br/~diego/software/luasocket/)
-- [Docker Basics](https://docs.docker.com/get-started/)
-- [GitHub Actions](https://docs.github.com/en/actions)
