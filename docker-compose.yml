@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  chat-server:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data
+      - ./users.txt:/app/users.txt
+    environment:
+      - LUA_PATH="/app/?.lua;;"
+    restart: unless-stopped
+    networks:
+      - chat-network
+
+  # Simple file-based storage (since SQLite is not allowed)
+  # We'll use volume mounts for persistence
+  
+networks:
+  chat-network:
+    driver: bridge
+
+volumes:
+  chat-data:
+    driver: local

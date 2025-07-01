@@ -1,0 +1,23 @@
+{
+  "name": "lua-chat-server",
+  "version": "1.0.0",
+  "description": "A minimal command-line multiplayer chat room system built with Lua",
+  "scripts": {
+    "start": "lua5.3 server.lua",
+    "client": "lua5.3 client.lua",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "deploy": "chmod +x deploy.sh && ./deploy.sh"
+  },
+  "keywords": [
+    "lua",
+    "chat",
+    "socket",
+    "multiplayer",
+    "beginner"
+  ],
+  "author": "First Year Student",
+  "license": "MIT"
+}
